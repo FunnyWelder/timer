@@ -1,0 +1,174 @@
+* {
+    font-family: 'Cifra';
+    user-select: none;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url(images/back.png);
+    margin:0;
+    display: inline-block;
+}
+
+button {
+    outline: none;
+    border: 0;
+    cursor: url('images/cur3.png') 2 2,auto;
+}
+
+#ptxt {
+    font-size: 70pt;
+    color: brown;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 4%;
+    margin-left: 30%;
+}
+
+[class*="column"] {
+    display: flex;
+    flex-direction: column;
+}
+
+[id^="4"] {
+    background: brown;
+    box-shadow: 0 0 2px 1px black;
+}
+
+[id^="4"]:active {
+    background: firebrick;
+}
+
+[class^="column"] {
+    height: 300px;
+    width: 100px;
+}
+
+[class^="column"] > button {
+    height: 20%;
+    width: 55%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 30pt;
+}
+
+.start {
+    background: brown url(images/normal.png) no-repeat;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 3px 2px black;
+    border-radius: 10%;
+}
+
+.start:active {
+    background: brown url(images/pressed.png) no-repeat;
+}
+
+.fff {
+    position: absolute;
+}
+
+#k1 {
+    margin-top: 0;
+    margin-left: 2%;
+    z-index: -1;
+}
+
+#k2 {
+    margin-left: 70%;
+    margin-top: -30%;
+    height: 200px;
+    width: 200px;
+}
+
+#k3 {
+    height: 20%;
+    width: 10%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 29%;
+    height: 350px;
+    width: 600px;
+    cursor: url('images/cur3.png') 2 2,auto;
+    right: 10px;
+}
+
+[class^="time"] {
+    font-size: 80pt;
+    color: brown;
+    text-shadow: 0 0 4px brown;
+}
+
+.time {
+    margin-left: -15px;
+    margin-right: 5px;
+    width: 30px;
+}
+
+@font-face {
+    font-family: 'Cifra';
+    src: url(fonts/Digital7Mono-B1g5.ttf);
+}
+
+.fcolumn1 {
+    width: 105px;
+    height: 300px;
+    margin-right: 13px;
+}
+
+.column2 {
+    margin-left: 30px;
+}
+
+.start {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.reset {
+    width: 65%;
+    height: 20%;
+    visibility: hidden;
+}
+
+.stop {
+    width: 65%;
+    height: 20%;
+    visibility: hidden;
+}
+
+.up {
+    margin-left: 20px;
+}
+
+.up:disabled {
+    color: black;
+}
+
+.down {
+    margin-left: 20px;
+}
+
+.down:disabled {
+    color: black;
+}
+
+#boom {
+    height: 2800px;
+    bottom: -70%;
+    right: -40%;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;
+}
